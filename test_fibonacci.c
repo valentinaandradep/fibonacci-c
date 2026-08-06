@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-
-int fibonacci(int n);
+#include "function_fibonacci.c"
 
 int main(void) {
     assert(fibonacci(0) == 0);
