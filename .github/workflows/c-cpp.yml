@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: compilar o programa principal
-        run: gcc fibonacci.c function_fibonacci.c -o fibonacci
+        run: gcc fibonacci.c -o fibonacci
 
       - name: executar o programa principal
         run: ./fibonacci 9
@@ -18,7 +18,7 @@ jobs:
         run: cat fibonacci.txt
 
       - name: compilar o arquivo de teste
-        run: gcc test_fibonacci.c function_fibonacci.c -o test_fibonacci
+        run: gcc test_fibonacci.c -o test_fibonacci
 
       - name: executar o arquivo de teste
         run: ./test_fibonacci
